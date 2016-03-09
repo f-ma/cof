@@ -12,8 +12,10 @@
 $brand-color: #61dafb;
 
 .root {
-  background: #373277;
+  background: #f2f2f2;
   color: #fff;
+  min-height: 42px;
+  border-bottom: solid 1px #ccc;
 }
 
 .container {
