@@ -18,6 +18,8 @@ import RegisterPage from './components/RegisterPage';
 import NotFoundPage from './components/NotFoundPage';
 import ErrorPage from './components/ErrorPage';
 
+import POSPage from './components/POSPage';
+
 const router = new Router(on => {
   on('*', async (state, next) => {
     const component = await next();
@@ -29,6 +31,8 @@ const router = new Router(on => {
   on('/login', async () => <LoginPage />);
 
   on('/register', async () => <RegisterPage />);
+
+  on('/POS', async () => <POSPage />);
 
   on('*', async (state) => {
     const query = `/graphql?query={content(path:"${state.path}"){path,title,content,component}}`;
