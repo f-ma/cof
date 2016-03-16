@@ -13,7 +13,7 @@ class Sidebar extends Component {
     });
     return (
       <div className={rootClass}>
-        fdfsdf
+        Sidebar
       </div>
     );
   }

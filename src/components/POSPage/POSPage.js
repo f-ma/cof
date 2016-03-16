@@ -2,6 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './POSPage.scss';
 import Sidebar from '../Sidebar';
+import ProductPool from '../ProductPool';
+import Cart from '../Cart';
 
 const title = 'POS';
 
@@ -14,7 +16,8 @@ class POSPage extends Component {
     return (
       <div className={s.root}>
         <Sidebar active={false} />
-        Quite
+        <ProductPool />
+        <Cart />
       </div>
     );
   }
