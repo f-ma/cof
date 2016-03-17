@@ -1,19 +1,16 @@
 import React, { Component, PropTypes} from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import classNames from 'classnames';
-import s from './Cart.scss';
-import Header from './Header';
-import Customer from './Customer';
+import s from './Customer.scss';
 
-class Cart extends Component {
+class Customer extends Component {
   render() {
-    return (
+    return(
       <div className={s.root}>
-        <Header />
-        <Customer />
+        Customer
       </div>
     );
   }
 }
 
-export default withStyles(Cart, s);
+export default withStyles(Customer, s);

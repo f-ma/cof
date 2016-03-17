@@ -1,0 +1,6 @@
+{
+  "name": "Cart Customer",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./Customer.js"
+}
