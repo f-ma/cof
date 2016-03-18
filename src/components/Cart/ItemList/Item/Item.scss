@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  height: 75px;
+  background-color: white;
+  border-top: solid 1px #dddddd;
+  align-items: center;
+  padding: 0 15px;
+  &:first-child {
+    border-top: none;
+  }
+}

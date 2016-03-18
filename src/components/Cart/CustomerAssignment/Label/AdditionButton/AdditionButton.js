@@ -1,16 +1,16 @@
 import React, { Component, PropTypes} from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import classNames from 'classnames';
-import s from './Customer.scss';
+import s from './AdditionButton.scss';
 
-class Customer extends Component {
+class AdditionButton extends Component {
   render() {
-    return(
+    return (
       <div className={s.root}>
-        Customer
+        <span>+</span>
       </div>
     );
   }
 }
 
-export default withStyles(Customer, s);
+export default withStyles(AdditionButton, s);

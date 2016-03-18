@@ -1,0 +1,6 @@
+{
+  "name": "Cart Item List",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./ItemList.js"
+}

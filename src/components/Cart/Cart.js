@@ -3,7 +3,8 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import classNames from 'classnames';
 import s from './Cart.scss';
 import Header from './Header';
-import Customer from './Customer';
+import Customer from './CustomerAssignment';
+import ItemList from './ItemList';
 
 class Cart extends Component {
   render() {
@@ -11,6 +12,7 @@ class Cart extends Component {
       <div className={s.root}>
         <Header />
         <Customer />
+        <ItemList />
       </div>
     );
   }

@@ -1,0 +1,6 @@
+{
+  "name": "Cart Customer Assignment Label Addition Button",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./AdditionButton.js"
+}

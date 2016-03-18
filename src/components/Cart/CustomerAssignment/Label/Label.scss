@@ -1,0 +1,14 @@
+.root {
+  height: 50px;
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-bottom: dashed 1px #ccc;
+}
+
+.active {
+  border-bottom: solid 1px #eeeeee;
+}
