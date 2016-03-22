@@ -1,0 +1,6 @@
+{
+  "name": "Cart Header Title",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./Title.js"
+}

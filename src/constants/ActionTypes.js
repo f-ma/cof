@@ -10,5 +10,5 @@
 import keyMirror from 'fbjs/lib/keyMirror';
 
 export default keyMirror({
-
+  CART_CUSTOMER_ASSIGNMENT_TOGGLE: null
 });

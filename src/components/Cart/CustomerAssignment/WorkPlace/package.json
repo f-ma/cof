@@ -1,0 +1,6 @@
+{
+  "name": "Cart Customer Assignment Work Place",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./WorkPlace.js"
+}

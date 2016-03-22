@@ -5,6 +5,7 @@ import s from './Cart.scss';
 import Header from './Header';
 import Customer from './CustomerAssignment';
 import ItemList from './ItemList';
+import CartStore from '../../stores/Cart';
 
 class Cart extends Component {
   render() {

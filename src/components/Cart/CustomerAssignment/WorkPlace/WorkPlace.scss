@@ -1,0 +1,8 @@
+.root {
+  display: flex;
+  overflow: hidden;
+  height: 0;
+  &.active {
+    height: auto;
+  }
+}
