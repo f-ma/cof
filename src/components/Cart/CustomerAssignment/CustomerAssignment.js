@@ -7,7 +7,13 @@ import WorkPlace from './WorkPlace';
 import CartStore from '../../../stores/Cart';
 
 class Customer extends Component {
+  constructor(props) {
+    super(props);
+  }
   componentDidMount() {
+    this._onCartChange = () => {
+      this.forceUpdate();
+    };
     CartStore.addChangeListener(this._onCartChange);
   }
   componentWillUnmount() {
@@ -22,7 +28,7 @@ class Customer extends Component {
     );
   }
   _onCartChange() {
-    this.setState();
+    //this.setState();
   }
   getState() {
     return {};
