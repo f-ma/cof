@@ -11,10 +11,8 @@ class Customer extends Component {
     super(props);
   }
   componentDidMount() {
-    this._onCartChange = () => {
-      this.forceUpdate();
-    };
-    CartStore.addChangeListener(this._onCartChange);
+
+    CartStore.addChangeListener(this._onCartChange.bind(this));
   }
   componentWillUnmount() {
     CartStore.removeChangeListener(this._onCartChange);
@@ -28,7 +26,7 @@ class Customer extends Component {
     );
   }
   _onCartChange() {
-    //this.setState();
+    this.forceUpdate();
   }
   getState() {
     return {};
