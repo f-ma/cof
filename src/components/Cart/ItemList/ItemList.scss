@@ -1,10 +1,22 @@
 .root {
   display: flex;
   flex-flow: column nowrap;
+  flex-grow: 1;
   align-items: stretch;
-  margin: 30px 0 15px 0;
+  margin: 15px 0;
+  transition: margin .4s ease-in-out;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
   overflow: auto;
   border: solid 1px #dddddd;
   border-right: none;
   border-left: none;
+}
+
+.deactive {
+  margin: 5px 0;
 }

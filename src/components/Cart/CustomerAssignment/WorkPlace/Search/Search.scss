@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  height: 42px;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  input {
+    padding: 0 15px;
+    flex-grow: 1;
+    border: none;
+    border-bottom: solid 1px #ddd;
+    &:active {
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

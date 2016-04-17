@@ -3,6 +3,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import classNames from 'classnames';
 import s from './WorkPlace.scss';
 import CartActions from '../../../../actions/Cart';
+import Search from './Search';
 
 class WorkPlace extends Component {
   render() {
@@ -13,7 +14,7 @@ class WorkPlace extends Component {
     });
     return (
       <div className={rootClass}>
-        WorkPlace
+        <Search focus={self.props.active} />
       </div>
     );
   }

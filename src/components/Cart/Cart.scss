@@ -3,9 +3,11 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
+  justify-content: flex-start;
   flex-shrink: 0;
   flex-grow: 0;
   background-color: #e6e6e6;
   color: #4d4d4d;
   border-left: solid 1px #ddd;
+  overflow: hidden;
 }

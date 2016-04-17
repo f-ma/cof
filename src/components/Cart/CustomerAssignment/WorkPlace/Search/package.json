@@ -1,0 +1,6 @@
+{
+  "name": "Cart Customer Assignment Work Place Search",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./Search.js"
+}

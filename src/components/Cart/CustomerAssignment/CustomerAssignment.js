@@ -6,31 +6,32 @@ import Label from './Label';
 import WorkPlace from './WorkPlace';
 import CartStore from '../../../stores/Cart';
 
-class Customer extends Component {
+class CustomerAssignment extends Component {
   constructor(props) {
     super(props);
   }
-  componentDidMount() {
-
-    CartStore.addChangeListener(this._onCartChange.bind(this));
-  }
-  componentWillUnmount() {
-    CartStore.removeChangeListener(this._onCartChange);
-  }
   render() {
+    var self = this;
+    var rootClass = classNames({
+      [s.root]: true,
+      [s.active]: self.props.active
+    });
     return(
-      <div className={s.root}>
+      <div className={rootClass}>
         <Label />
-        <WorkPlace active = { CartStore.getIsCustomerAssigning() } />
+        <WorkPlace active = { self.props.active } />
       </div>
     );
   }
-  _onCartChange() {
-    this.forceUpdate();
-  }
-  getState() {
-    return {};
-  }
 }
 
-export default withStyles(Customer, s);
+CustomerAssignment.propTypes = {
+  active: PropTypes.bool.isRequired,
+  className: PropTypes.string
+}
+
+CustomerAssignment.defaultProps = {
+  active: false
+}
+
+export default withStyles(CustomerAssignment, s);

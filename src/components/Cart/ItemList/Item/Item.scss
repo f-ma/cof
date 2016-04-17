@@ -4,8 +4,33 @@
   background-color: white;
   border-top: solid 1px #dddddd;
   align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
   padding: 0 15px;
   &:first-child {
     border-top: none;
+  }
+  .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #4d4d4d;
+    border-radius: 5px;
+    height: 35x;
+    padding: 0 5px;
+  }
+  .indentifier {
+    margin-left: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    .title {
+      font-weight: bold;
+    }
+    .subtitle {
+      font-size: 12px;
+      color: #808080;
+    }
   }
 }
