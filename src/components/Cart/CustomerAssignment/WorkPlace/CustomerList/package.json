@@ -1,0 +1,6 @@
+{
+  "name": "Cart Customer Assignment Customer List",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./CustomerList.js"
+}

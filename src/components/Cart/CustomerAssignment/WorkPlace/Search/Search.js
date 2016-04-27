@@ -5,14 +5,15 @@ import s from './Search.scss';
 
 class Search extends Component {
   componentDidUpdate() {
-    console.log(this);
+    if (this.props.focus === true) {
+      this.refs.searchInput.focus();
+    }
   }
 
   render() {
-    console.log("search" + this.props.focus);
     return (
       <div className={s.root}>
-        <input type="text" placeholder="Search for an existing Customer" focus="{this.props.focus}" />
+        <input type="text" placeholder="Search for an existing Customer" ref="searchInput" />
       </div>
     );
   }

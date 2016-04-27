@@ -4,11 +4,12 @@
   align-items: stretch;
   overflow: hidden;
   height: 0;
-  transition: height .2s ease-in-out, padding .2s ease-in-out, opacity .2s ease-in-out;
+  /*transition: height .2s ease-in-out, padding .2s ease-in-out, opacity .2s ease-in-out;*/
   background-color: white;
   opacity: 0;
   &.active {
-    height: 320px;
+    /*height: 320px;*/
+    height: auto;
     border-bottom: solid 1px #dddddd;
     opacity: 1;
   }

@@ -1,8 +1,11 @@
 .root {
   display: flex;
   align-items: center;
+  flex-shrink: 1;
+  flex-grow: 0;
   padding: 0 15px;
-  height: 140px;
+  min-height: 50px;
+  height: 200px;
   background-color: white;
   border: solid 1px #dddddd;
   border-left: none;

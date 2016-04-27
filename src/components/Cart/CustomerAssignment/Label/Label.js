@@ -8,17 +8,30 @@ import CartActions from '../../../../actions/Cart';
 
 class Label extends Component {
   render() {
+    var self = this;
+    var rootClass = classNames({
+      [s.root]: true,
+      [s.active]: self.props.active
+    });
     return (
-      <div className={s.root} onClick={this._handleOnClick}>
-        <Title />
-        <AdditionButton />
+      <div className={rootClass} onClick={this._handleOnClick}>
+        <Title active={self.props.active} />
+        <AdditionButton active={self.props.active} />
       </div>
     );
   }
   _handleOnClick(event) {
-    event.stopPropagation();    
+    event.stopPropagation();
     CartActions.toggleCustomerAssignment();
   }
+}
+
+Label.propTypes = {
+  active: PropTypes.bool.isRequired
+}
+
+Label.defaultProps = {
+  active: false
 }
 
 export default withStyles(Label, s);

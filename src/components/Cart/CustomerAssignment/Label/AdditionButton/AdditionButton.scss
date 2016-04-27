@@ -3,4 +3,8 @@
   align-items: center;
   font-size: 24px;
   font-weight: 900;
+  transition: transform .2s ease-in-out;
+}
+.active {
+  transform: rotateZ(45deg);
 }

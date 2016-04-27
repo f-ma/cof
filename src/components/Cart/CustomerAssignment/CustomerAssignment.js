@@ -18,7 +18,7 @@ class CustomerAssignment extends Component {
     });
     return(
       <div className={rootClass}>
-        <Label />
+        <Label active = {self.props.active} />
         <WorkPlace active = { self.props.active } />
       </div>
     );

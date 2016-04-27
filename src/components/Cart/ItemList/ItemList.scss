@@ -1,16 +1,21 @@
 .root {
   display: flex;
+  height: 100px;
+  min-height: 100px;
   flex-flow: column nowrap;
   flex-grow: 1;
+  flex-shrink: 1;
   align-items: stretch;
   margin: 15px 0;
-  transition: margin .4s ease-in-out;
+  /*transition: margin .4s ease-in-out;*/
+  overflow: hidden;
 }
 
 .wrapper {
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
+  flex-shrink: 1;
   overflow: auto;
   border: solid 1px #dddddd;
   border-right: none;

@@ -1,5 +1,5 @@
 .root {
-  height: 42px;
+  height: 50px;
   background-color: white;
   display: flex;
   flex-flow: row nowrap;
@@ -9,7 +9,7 @@
   color: #999999;
   border-bottom: dashed 1px #ccc;
   cursor: pointer;
-  transition: background-color .2s ease-in-out;
+  /*transition: background-color .2s ease-in-out;*/
   &:hover {
     background-color: #f2f2f2;
   }
@@ -19,6 +19,13 @@
 }
 
 .active {
-  border-bottom: solid 1px #eeeeee;
-  color: #4d4d4d;
+  border-bottom: solid 1px #dddddd;
+  color: white;
+  background-color: #808080;
+  &:hover {
+    background-color: #909090;
+  }
+  &:active {
+    background-color: #808080;
+  }
 }

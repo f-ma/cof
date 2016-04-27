@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import s from './WorkPlace.scss';
 import CartActions from '../../../../actions/Cart';
 import Search from './Search';
+import CustomerList from './CustomerList';
 
 class WorkPlace extends Component {
   render() {
@@ -15,6 +16,7 @@ class WorkPlace extends Component {
     return (
       <div className={rootClass}>
         <Search focus={self.props.active} />
+        <CustomerList />
       </div>
     );
   }
